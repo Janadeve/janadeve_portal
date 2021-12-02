@@ -1,0 +1,62 @@
+/*FONTS*/
+@import url("fonts.css");
+@import url("footer.css");
+@import url("navbar.css");
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+	color: #FF6766;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #FF6766;
+	text-decoration: underline;
+}
+
+/*Main Container*/
+#main{
+	display: block;
+	position: relative;
+	background-color: lightblue;
+	width: 100%;
+}
+
+#ct_topo{
+	background-color: #FCFBF9;
+	padding: 2vh;
+}
+
+#logo_topo{
+	display: block;
+	position: relative;
+	background-image: url("../img/logo_topo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25em;
+	height: 170px;
+}
+
+#ct_content{
+	display: block;
+	position: relative;
+	background-color: #EEEEEE;
+	border:1px dashed #AAAAAA;
+	padding: 10px;
+}
+

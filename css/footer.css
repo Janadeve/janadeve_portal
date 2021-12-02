@@ -1,0 +1,38 @@
+#ct_footer{
+	display: block;
+	position: relative;
+	background-color: #f2cec4;
+	height: auto;
+	padding: 20px 10px 10px 10px;
+}
+
+#ct_footer ul{
+	margin: 0;
+}
+
+.fa-instagram{
+	font-weight: bold;
+}
+
+#ct_footer #lista_footer{
+	list-style: none;
+}
+
+#ct_footer #lista_footer li{
+	display: block;
+	position: relative;
+	width: 25%;
+	float: left;
+	text-align: center;
+	font-weight: bolder;
+}
+
+#ct_footer #lista_footer .icone{
+	font-size: 24px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+#ct_footer #lista_footer .icone:hover{
+	color: #A96B58;
+}
