@@ -71,7 +71,7 @@
                   <legend class="bio-legend">Ajuste o tamanho da Bio:</legend>
                   <div class="bio-length-options">
                     <div class="bio-option">
-                      <input class="bio-input" type="radio" id="length-shortest" name="length" value="shortest">
+                      <input class="bio-input" type="radio" checked="checked" id="length-shortest" name="length" value="shortest">
                       <label class="bio-label" for="length-shortest">
                         <span class="bio-label-text">Curta</span>
                       </label>
@@ -111,27 +111,35 @@
               </form>
               <p class="bio">
                 <strong>Janaína Cristina</strong>
-                <span style="display: inline;">trabalha  
-                  <span style="display: inline;">como desenvolvedora full-stack</span> na
-                  <a href="https://www.github.com/janadeve" target="_blank">CI&T</a>
-                  <span style="display: inline;">, onde trabalha para melhorar a experiência de construção</span> e 
-                  <span style="display: inline;">implantando na web moderna. Ela também </span>
-                  aprendeu com
-                  <a href="https://github.com/romagnolocesar/" target="_blank">
-                    <em>César Romagnolo</em>
-                  </a>
-                  <span style="display: none;">, um desenvolvedor full-stack Sênior</span>
-                  . Ela 
-                  <span style="display: none;">passa muito tempo
-                    <span style="display: none;"> escrevendo para compartilhar o que ele aprendeu em tecnologia, bem como histórias sobre como ele costumava ser péssimo, ouviu pessoas que lhe ensinaram lições valiosas e fez mudanças que o ajudaram a chupar menos. Isso freqüentemente se resume a</span>
-                     dizendo às pessoas que a fórmula para o sucesso e a felicidade é erguer um ao outro
-                     <span style="display: none;"> em toda oportunidade</span> 
-                     e compartilhar o que aprendeu
-                     <span style="display: none;">, mesmo quando parece algo que foi compartilhado antes ou que "todo mundo já sabe”</span>. Ela
-                   </span>
-                 </span> está tentando o seu melhor
-                 <span style="display: none;"> para seguir seu próprio conselho</span>. 
-                 <span style="display: none;">Ela vive em Sumaré, região de Campinas - São Paulo.</span>
+                <span id="shortest-bio">está dando o seu melhor</span>
+                <span id="shorter-bio" style="display: none;">trabalha como desenvolvedora full-stack na
+                  <a href="https://www.github.com/janadeve" target="_blank">CI&T</a>.
+                  Ela está dando o melhor de si para seguir seus próprios conselhos.
+                </span>
+                <span id="short-bio" style="display: none;">trabalha como desenvolvedora full-stack na
+                  <a href="https://www.github.com/janadeve" target="_blank">CI&T</a>.
+                  Ela passa muito tempo dizendo às pessoas que a fórmula para o sucesso e a felicidade é erguer um ao outro e compartilhar o que aprendemos.
+                  Ela está dando o melhor de si para seguir seus próprios conselhos.
+                  Ela mora em Sumaré, região de Campinas - São Paulo.
+                </span>
+                <span id="long-bio" style="display: none;">trabalha como desenvolvedora full-stack na
+                  <a href="https://www.github.com/janadeve" target="_blank">CI&T</a>.
+                  Gosta muito de códigos, lógica refinada e muita matemática.
+                  Ela passa muito tempo dizendo às pessoas que a fórmula para o sucesso e a felicidade é erguer um ao outro e compartilhar o que aprendemos. Ela está dando o melhor de si para seguir seus próprios conselhos. Ela mora em Sumaré, região de Campinas - São Paulo.
+                </span>
+                <span id="longer-bio" style="display: none;">trabalha como desenvolvedora full-stack na
+                  <a href="https://www.github.com/janadeve" target="_blank">CI&T</a>, onde ele trabalha para melhorar a experiência de construção e implantação na web moderna.
+                  Gosta muito de códigos, lógica refinada e muita matemática.
+                  Ela passa muito tempo dizendo às pessoas que a fórmula para o sucesso e a felicidade é erguer um ao outro e compartilhar o que aprendemos. 
+                  Ela está dando o melhor de si para seguir seus próprios conselhos. Ela mora em Sumaré, região de Campinas - São Paulo.
+                </span>
+                <span id="longest-bio" style="display: none;">trabalha como desenvolvedora full-stack na
+                  <a href="https://www.github.com/janadeve" target="_blank">CI&T</a>, onde ela trabalha para melhorar a experiência de construção e implantação na web moderna.
+                  Gosta muito de códigos, lógica refinada e muita matemática.
+                  Ela passa muito tempo escrevendo para compartilhar o que ele aprendeu, mesmo quando parece algo que foi compartilhado antes ou que "todo mundo já sabe".
+                  Isso freqüentemente se resume a 
+                  Ela está dando o melhor de si para seguir seus próprios conselhos. Ela mora em Sumaré, região de Campinas - São Paulo.
+                </span>
                </p>
                <div class="bio-social">
                 <h2 class="bio-connect">Conecte com Jana:</h2>
@@ -437,6 +445,36 @@
 
         $("#menu-cabeca").addClass('hiden');
       }
+    });
+
+    $("#length-shortest").click(function(event) {
+      $("#bio span").hide();
+      $("#shortest-bio").show();
+    });
+
+    $("#length-shorter").click(function(event) {
+      $("#bio span").hide();
+      $("#shorter-bio").show();
+    });
+
+    $("#length-short").click(function(event) {
+      $("#bio span").hide();
+      $("#short-bio").show();
+    });
+
+    $("#length-long").click(function(event) {
+      $("#bio span").hide();
+      $("#long-bio").show();
+    });
+
+    $("#length-longer").click(function(event) {
+      $("#bio span").hide();
+      $("#longer-bio").show();
+    });
+
+    $("#length-longest").click(function(event) {
+      $("#bio span").hide();
+      $("#longest-bio").show();
     });
   </script>
   </html>
