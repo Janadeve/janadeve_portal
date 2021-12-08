@@ -45,6 +45,11 @@ b, strong {
     position: relative;
 }
 
+.block.yellow {
+    background: var(--yellow);
+    border-color: var(--yellow-dark);
+}
+
 @media (min-width: 1200px){
     .h3, h3 {
         font-size: 1.2rem;
@@ -79,7 +84,7 @@ b, strong {
     z-index: 0;
 }
 
-#barra-topo header a{
+#barra-topo .link-topo{
     color: var(--white);
     text-decoration: none;
     font-weight: 400;
@@ -115,6 +120,10 @@ b, strong {
     width: 112px;
 }
 
+#menu-cabeca.hiden button:before{
+    visibility: hidden;
+}
+
 #barra-topo header button{
     position: absolute;
     background-color: transparent;
@@ -127,7 +136,7 @@ b, strong {
     transform: rotate(180deg);  
 }
 
-#barra-topo header #menu-cabeca button:hover{
+#barra-topo.nav-is-active header #menu-cabeca button, #barra-topo header #menu-cabeca button:hover{
     background: var(--yellow);
     border-color: var(--pink);
     border-radius: 0 0 50% 50%;
@@ -137,6 +146,10 @@ b, strong {
 #menu-cabeca:hover{
     top: -3px;
 }
+
+#barra-topo.nav-is-active #menu-cabeca{
+   top: -3px; 
+} 
 
 #barra-topo #configuracoes{
     display: block;
