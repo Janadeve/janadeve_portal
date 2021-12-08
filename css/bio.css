@@ -147,7 +147,7 @@
 }
 
 .bio-link:focus, .bio-link:hover {
-    background: var(--text-pink);
+    background: var(--text);
     outline: none;
     transition-delay: 0ms;
 }

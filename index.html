@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="css/writing.css">
   <link rel="stylesheet" href="css/newsletter.css">
   <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/hero-panel.css">
+  <link rel="stylesheet" href="css/barra-topo.css">
   <title>JanaDeve - Inicio</title>
 </head>
 <body>
@@ -28,7 +30,9 @@
     <h1>
       <span class="first-line">Jana</span>
       <span class="hero-box">Cristina</span>
-      <span class="tagline"><span class="love">love</span>Uma caneca de café</span>
+      <span class="tagline">
+        <span class="love-wrapper"><span class="love">love</span></span>
+      Uma caneca de café</span>
     </h1>
   </div>
   <div id="barra-topo" class="container">
@@ -174,7 +178,7 @@
                   <div class="" style="height: 0px; max-width: 100%; padding-bottom: 100%; position: relative; width: 400px;">
                     <img loading="lazy" src="img/bio/pegando-cabelo.jpg" alt="Janaina Cristina da Silva - Foto mais comum" class="" height="400" width="400" style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;">
                   </div>
-                  <figcaption>Éssa é a foto de perfil mais comum da Janaína</figcaption>
+                  <figcaption>Essa é a foto de perfil mais comum da Janaína</figcaption>
                 </figure>
                 <div class="gallery-options">
                   <h2 class="gallery-heading">Você pode usar essas fotos:</h2>
@@ -411,7 +415,7 @@
         <div class="form-wrapper">
           <div class="form-image-wrapper">
             <div class="" style="height: 0px; max-width: 100%; padding-bottom: 105.714%; position: relative; width: 280px;">
-              <img loading="lazy" src="https://res.cloudinary.com/jlengstorf/image/upload/q_auto,f_auto,c_fill,w_280,h_296/jason.af/opt-in" alt="Illustration of a letter with a heart on the top flap." class="" height="296" width="280" style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;">
+              <img loading="lazy" src="img/opt-in.png" alt="Ilustração de uma carta com um coração na aba superior." class="" height="296" width="280" style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;">
             </div>
           </div>
           <form action="/api/subscribe" method="POST" class="opt-in-form">
@@ -448,32 +452,32 @@
     });
 
     $("#length-shortest").click(function(event) {
-      $("#bio span").hide();
+      $(".bio span").hide();
       $("#shortest-bio").show();
     });
 
     $("#length-shorter").click(function(event) {
-      $("#bio span").hide();
+      $(".bio span").hide();
       $("#shorter-bio").show();
     });
 
     $("#length-short").click(function(event) {
-      $("#bio span").hide();
+      $(".bio span").hide();
       $("#short-bio").show();
     });
 
     $("#length-long").click(function(event) {
-      $("#bio span").hide();
+      $(".bio span").hide();
       $("#long-bio").show();
     });
 
     $("#length-longer").click(function(event) {
-      $("#bio span").hide();
+      $(".bio span").hide();
       $("#longer-bio").show();
     });
 
     $("#length-longest").click(function(event) {
-      $("#bio span").hide();
+      $(".bio span").hide();
       $("#longest-bio").show();
     });
   </script>
